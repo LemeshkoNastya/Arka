@@ -51,6 +51,13 @@
         font-weight: 400;
         line-height: 21.6px;
     }
+    @if $breakpoint == roboto-bold-32 {
+        font-family: 'Roboto';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 41px;
+    }
     @if $breakpoint == roboto-bold-31 {
         font-family: 'Roboto';
         font-size: 31px;
@@ -64,6 +71,14 @@
         font-style: normal;
         font-weight: 700;
         line-height: 36px;
+    }
+    @if $breakpoint == roboto-bold-18 {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0.36px;
     }
     @if $breakpoint == roboto-bold-15 {
         font-family: 'Roboto';

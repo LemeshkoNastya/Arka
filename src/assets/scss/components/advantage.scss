@@ -1,0 +1,40 @@
+.advantage {
+    background: $color-gallery-dark;
+    padding-top: 88px;
+    padding: 88px 162px 141.69px;
+
+    &__text {
+        @include font(roboto-bold-32);
+        color: $color-midnight;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 82.31px;
+    }
+
+    &__card {
+
+        &__image {
+            margin-bottom: 54px;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            @include font(roboto-bold-18);
+            color: $color-midnight;
+            margin-bottom: 12px;
+        }
+
+        &__subtitle {
+            @include font(roboto-15);
+            color: $color-silver-chalice;
+            width: 246px;
+        }
+    }
+}
