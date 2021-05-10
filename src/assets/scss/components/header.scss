@@ -9,6 +9,8 @@
     @include font(roboto-14);
     text-transform: uppercase;
     box-shadow: 0px 14px 44px $color-emperor;
+    position: absolute;
+    top: 0;
 
     &__logo {
         margin-left: 24px;
