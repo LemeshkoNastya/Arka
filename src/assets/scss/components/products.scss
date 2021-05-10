@@ -1,0 +1,94 @@
+.products {
+    background: $color-gallery-dark;
+    padding: 57px 120px 49.69px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 57px;
+
+        &__text {
+            @include font(roboto-32-oblate);
+        }
+
+        &__button {
+            width: 247px;
+            height: 44px;
+            background: $color-east-bay;
+            border: none;
+            border-radius: 44px;
+            @include font(roboto-14);
+            color: $color-white;
+            text-transform: uppercase;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 46px;
+
+        .card {
+            width: 400px;
+            height: 432px;
+            background: $color-white;
+            border: 1px solid $color-gallery;
+    
+            &__image {
+                margin-bottom: 24px;
+            }
+    
+            &__title {
+                @include font(roboto-18-oblate);
+                color: $color-midnight;
+                margin-left: 25px;
+            }
+    
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                @include font(roboto-15);
+                color: $color-silver-chalice;
+                margin: 6px 25px 4px;
+            }
+    
+            &__subtitle {
+                width: 209px;
+                margin-top: 2px;
+
+                &__boxes {
+                    width: 192px;
+                }
+            }
+    
+            &__text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__text {
+            @include font(roboto-bold-15);
+            color: $color-silver-chalice;
+            margin-right: 16px;
+        }
+
+        &__button {
+            width: 158px;
+            height: 44px;
+            background: $color-white;
+            border-radius: 44px;
+            border: none;
+            @include font(roboto-bold-14);
+            color: $color-east-bay;
+            text-transform: uppercase;
+        }
+    }
+}
