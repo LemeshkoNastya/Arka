@@ -1,0 +1,68 @@
+.customers {
+    background: $color-gallery-dark;
+    padding: 70px 120px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $color-silver-tree;
+        box-shadow: 0px 14px 44px $color-gray;
+    }
+
+    &__text {
+        margin-top: 88px;
+        @include font(roboto-32);
+        color: $color-midnight;
+    }
+
+    &__cards {
+        display: flex;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        margin: 46.31px 0 75.69px;
+
+        &__image {
+            margin-bottom: 12px;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            @include font(roboto-18);
+            color: $color-midnight;
+        }
+
+        &__subtitle {
+            width: 197px;
+            text-align: center;
+            @include font(roboto-15);
+            color: $color-east-bay;
+
+            &__proof {
+                width: 152px;
+            }
+        }
+    }
+
+    &__button {
+        width: 220px;
+        height: 44px;
+        margin-bottom: 88px;
+        background: $color-east-bay;
+        border-radius: 44px;
+        border: none;
+        @include font(roboto-bold-14);
+        text-transform: uppercase;
+        color: $color-white;
+    }
+}
