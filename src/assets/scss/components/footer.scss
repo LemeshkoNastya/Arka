@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60.31px 120px 59.69px;
+    background: $color-porcelain;
+
+    &__logo {
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-bottom: 17px;
+            color: $color-east-bay;
+            @include font(roboto-15-oblate);
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 94px;
+    }
+
+    &__input {
+        width: 280px;
+        height: 36px;
+        background: $color-white;
+        border-radius: 34px;
+        border: none;
+        margin-bottom: 12px;
+        color: $color-midnight;
+        @include font(roboto-15-italic);
+        padding: 9px 18px;
+        outline: none;
+
+        &::placeholder {
+            color: $color-east-bay-opacity;
+        }
+    }
+
+    &__button {
+        width: 187px;
+        height: 44px;
+        background: $color-east-bay;
+        border-radius: 44px;
+        border: none;
+        color: $color-white;
+        @include font(roboto-bold-18-oblate);
+    }
+}
