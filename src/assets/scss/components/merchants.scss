@@ -1,0 +1,127 @@
+.merchants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color-gallery-dark;
+
+    &__title {
+        margin-top: 88px;
+        @include font(roboto-bold-32-oblate);
+        color: $color-midnight;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: 59px 0 57px;
+        background: $color-white;
+        box-shadow: 0px 14px 44px $color-gray;
+        width: 1200px;
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:first-child {
+                justify-content: space-around;
+            }
+
+            &:nth-child(2) {
+                margin-right: 106px;
+                margin-bottom: 55px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 106px;
+                margin-bottom: 55px;
+            }
+
+            &:nth-child(4) {
+                margin-right: 106px;
+            }
+        }
+
+        &__line {
+            width: 1px;
+            height: 70px;
+            background: $color-gallery-dark;
+        }
+
+        &__google {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        &__score {
+            display: flex;
+            align-items: center;
+            color: $color-midnight;
+            @include font(roboto-18-oblate);
+            margin-top: 20.23px;
+        }
+
+        &__stars {
+            margin-right: 4px;
+        }
+
+        &__star {
+            margin-right: -2.83px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__shopify {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        &__info {
+            width: 400px;
+        }
+
+        &__title {
+            color: $color-midnight;
+            @include font(lato-24);
+        }
+
+        &__user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 11.81px;
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__text {
+                color: $color-silver-chalice;
+                @include font(lato-15);
+            }
+        }
+
+        &__name {
+            color: $color-midnight;
+            @include font(lato-18);
+        }
+
+        &__button {
+            color: $color-midnight;
+            @include font(roboto-14);
+            width: 160px;
+            height: 44px;
+            background: $color-concrete;
+            border-radius: 44px;
+            border: none;
+            text-transform: uppercase;
+        }
+    }
+}
