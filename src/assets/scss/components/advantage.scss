@@ -1,7 +1,7 @@
 .advantage {
     background: $color-gallery-dark;
     padding-top: 88px;
-    padding: 88px 162px 141.69px;
+    padding: 88px 162px 140px;
 
     &__text {
         @include font(roboto-bold-32);
@@ -17,7 +17,7 @@
     &__card {
 
         &__image {
-            margin-bottom: 54px;
+            margin-bottom: 50px;
         }
 
         &__text {
@@ -35,6 +35,10 @@
             @include font(roboto-15);
             color: $color-silver-chalice;
             width: 246px;
+        }
+
+        &__proofing {
+            width: 250px;
         }
     }
 }

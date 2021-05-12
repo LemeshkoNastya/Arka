@@ -7,7 +7,7 @@
         justify-content: space-between;
         background: $color-sunglow;
         box-shadow: 0px 14px 44px $color-gray;
-        padding: 110px 121px 90px 133px;
+        padding: 110px 121px 90px 140px;
     }
 
     &__card {
@@ -34,6 +34,10 @@
         margin-bottom: 10px;
         @include font(roboto-15);
         color: $color-east-bay;
+
+        &__column1 {
+            width: 310px;
+        }
     }
 
     &__button {

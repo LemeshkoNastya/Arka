@@ -29,7 +29,7 @@
 
             &:nth-child(2) {
                 margin-right: 106px;
-                margin-bottom: 55px;
+                margin-bottom: 50px;
             }
 
             &:nth-child(3) {
@@ -52,7 +52,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 100px 0;
+            margin: 100px 0 100px 100px;
         }
 
         &__score {
@@ -79,7 +79,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 100px 0;
+            margin: 100px 100px 100px 0;
         }
 
         &__info {
@@ -105,6 +105,14 @@
             &__text {
                 color: $color-silver-chalice;
                 @include font(lato-15);
+            }
+
+            &__leslie {
+                margin-right:  50px;
+            }
+
+            &__anthony {
+                margin-right:  45px;
             }
         }
 

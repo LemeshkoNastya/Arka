@@ -17,7 +17,7 @@
             background: $color-east-bay;
             border: none;
             border-radius: 44px;
-            @include font(roboto-14);
+            @include font(roboto-bold-14);
             color: $color-white;
             text-transform: uppercase;
         }
@@ -25,6 +25,8 @@
 
     &__cards {
         display: flex;
+        justify-content: center;
+        // align-items: center;
         flex-wrap: wrap;
         margin-bottom: 46px;
 
