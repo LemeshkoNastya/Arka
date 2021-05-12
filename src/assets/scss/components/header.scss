@@ -18,6 +18,22 @@
 
     &__menu {
         width: 700px;
+
+        @include resolution(desktop) {
+            width: 600px;
+
+            @include resolution(small-desktop) {
+                display: none;
+            }
+        }
+
+        &__dropdown {
+            display: none;
+
+            @include resolution(small-desktop) {
+                display: block;
+            }
+        }
     }
 
     .list {
