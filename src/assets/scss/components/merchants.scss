@@ -18,6 +18,19 @@
         box-shadow: 0px 14px 44px $color-gray;
         width: 1200px;
 
+        @include resolution(desktop) {
+            width: 900px;
+        }
+
+        @include resolution(small-desktop) {
+            width: 700px;
+        }
+
+        @include resolution(tablet) {
+            width: 85%;
+            align-items: center;
+        }
+
         &__item {
             display: flex;
             justify-content: space-between;
@@ -40,12 +53,41 @@
             &:nth-child(4) {
                 margin-right: 106px;
             }
+
+            @include resolution(desktop) {
+
+                &:not(:first-child) {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+                &:nth-child(3) {
+                    flex-direction: column-reverse;
+                }
+            }
+
+            @include resolution(tablet) {
+                width: 85%;
+
+                flex-direction: column;
+                align-items: center;
+
+                &:nth-child(3) {
+                    flex-direction: column-reverse;
+                }
+            }
         }
 
         &__line {
             width: 1px;
             height: 70px;
             background: $color-gallery-dark;
+
+            @include resolution(tablet) {
+                display: none;
+            }
         }
 
         &__google {
@@ -53,6 +95,10 @@
             flex-direction: column;
             align-items: center;
             margin: 100px 0 100px 100px;
+
+            @include resolution(tablet) {
+                margin: 100px 0 50px;
+            }
         }
 
         &__score {
@@ -80,15 +126,33 @@
             flex-direction: column;
             align-items: center;
             margin: 100px 100px 100px 0;
+
+            @include resolution(tablet) {
+                margin: 50px 0 100px;
+            }
         }
 
         &__info {
             width: 400px;
+
+            @include resolution(desktop) {
+                margin: 70px 0;
+            }
+
+            @include resolution(big-mobile) {
+                width: 300px;
+                text-align: center;
+                margin: 30px 0;
+            }
         }
 
         &__title {
             color: $color-midnight;
             @include font(lato-24);
+
+            @include resolution(big-mobile) {
+                font-size: 18px;
+            }
         }
 
         &__user {
@@ -114,11 +178,29 @@
             &__anthony {
                 margin-right:  45px;
             }
+
+            @include resolution(big-mobile) {
+                &__leslie, &__anthony {
+                    margin-right: 0;
+                }
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin-top: 20px;
+                }
+            }
         }
 
         &__name {
             color: $color-midnight;
             @include font(lato-18);
+
+            @include resolution(big-mobile) {
+                margin-top: 20px;
+            }
         }
 
         &__button {
@@ -130,6 +212,17 @@
             border-radius: 44px;
             border: none;
             text-transform: uppercase;
+
+            @include resolution(big-mobile) {
+                margin-top: 20px;
+            }
+        }
+
+        &__image {
+            
+            @include resolution(tablet) {
+                width: 100%;
+            }
         }
     }
 }
