@@ -6,22 +6,74 @@
     height: calc(100vh - 61px);
     margin-top: 61px;
 
+    @include resolution(tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     &__info {
         margin-left: 120px;
         margin-top: 165px;
         color: $color-midnight;
         width: 500px;
+
+        @include resolution(small-desktop) {
+            margin-left: 60px;
+        }
+
+        @include resolution(tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        @include resolution(big-mobile) {
+            margin-top: 200px;
+        }
     }
 
     &__title {
         @include font(roboto-48);
         margin-bottom: 33px;
+
+        @include resolution(small-desktop) {
+            font-size: 40px;
+        }
+
+        @include resolution(tablet) {
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        @include resolution(big-mobile) {
+            margin-bottom: 20px;
+            width: 350px;
+            font-size: 26px;
+        }
     }
 
     &__subtitle {
         @include font(roboto-15);
         width: 277px;
         margin-bottom: 14px;
+
+        @include resolution(small-desktop) {
+            margin-bottom: 40px;
+        }
+
+        @include resolution(tablet) {
+            width: 300px;
+            text-align: center;
+        }
+
+        @include resolution(big-mobile) {
+            margin-bottom: 40px;
+        }
     }
 
     &__button {
@@ -33,8 +85,30 @@
         color: $color-white;
         @include font(roboto-bold-14);
         text-transform: uppercase;
+
+        @include resolution(big-mobile) {
+            font-size: 12px;
+            width: 200px;
+            height: 50px;
+        }
     }
     &__image {
         margin-top: 87px;
+
+        @include resolution(small-desktop) {
+            width: 400px;
+            height: 502px;
+        }
+
+        @include resolution(tablet) {
+            width: 250px;
+            height: 302px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+
+        @include resolution(big-mobile) {
+            margin-bottom: 150px;
+        }
     }
 }
