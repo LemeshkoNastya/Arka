@@ -2,13 +2,31 @@
     background: $color-gallery-dark;
     padding: 57px 120px 49.69px;
 
+    @include resolution(small-desktop) {
+        padding: 57px 60px 49.69px;
+    }
+
     &__title {
         display: flex;
         justify-content: space-between;
         margin-bottom: 57px;
 
+        @include resolution(tablet) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &__text {
             @include font(roboto-32-oblate);
+
+            @include resolution(small-desktop) {
+                width: 300px;
+            }
+
+            @include resolution(tablet) {
+                text-align: center;
+                margin-bottom: 50px;
+            }
         }
 
         &__button {
@@ -26,7 +44,6 @@
     &__cards {
         display: flex;
         justify-content: center;
-        // align-items: center;
         flex-wrap: wrap;
         margin-bottom: 46px;
 
@@ -35,9 +52,23 @@
             height: 432px;
             background: $color-white;
             border: 1px solid $color-gallery;
+
+            @media (max-width: 1050px) {
+                width: 375px;
+            }
+
+            @include resolution(small-desktop) {
+                width: 329px;
+                height: 375px;
+            }
     
             &__image {
                 margin-bottom: 24px;
+
+                @include resolution(small-desktop) {
+                    margin-bottom: 0;
+                    width: 100%;
+                }
             }
     
             &__title {
@@ -58,6 +89,10 @@
                 width: 209px;
                 margin-top: 2px;
 
+                @include resolution(small-desktop) {
+                    width: 180px;
+                }
+
                 &__boxes {
                     width: 192px;
                 }
@@ -76,10 +111,18 @@
         justify-content: center;
         align-items: center;
 
+        @include resolution(big-mobile) {
+            flex-direction: column;
+        }
+
         &__text {
             @include font(roboto-bold-15);
             color: $color-silver-chalice;
             margin-right: 16px;
+
+            @include resolution(big-mobile) {
+                margin-bottom: 30px;
+            }
         }
 
         &__button {
