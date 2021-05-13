@@ -15,6 +15,11 @@
     }
 
     &__logo {
+
+        @include resolution(big-desktop) {
+            width: 200px;
+        }
+
         @include resolution(small-desktop) {
             margin-bottom: 70px;
         }
@@ -32,6 +37,11 @@
             margin-bottom: 18px;
             color: $color-east-bay;
             @include font(roboto-15-oblate);
+
+            @include resolution(big-desktop) {
+                font-size: 24px;
+                line-height: 34px;
+            }
 
             @include resolution(tablet) {
                 text-align: center;
@@ -85,6 +95,14 @@
         justify-content: space-between;
         width: 94px;
 
+        @include resolution(big-desktop) {
+            width: 150px;
+
+            img {
+                width: 40px;
+            }
+        }
+
         @include resolution(tablet) {
             margin-left: 36px;
         }
@@ -98,12 +116,25 @@
         border: none;
         margin-bottom: 12px;
         color: $color-midnight;
-        @include font(roboto-15-italic);
+        @include font(roboto-15);
         padding: 9px 23px;
         outline: none;
 
         &::placeholder {
+            @include font(roboto-15-italic);
             color: $color-east-bay-opacity;
+
+            @include resolution(big-desktop) {
+                font-size: 24px;
+            }
+        }
+
+        @include resolution(big-desktop) {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            width: 420px;
+            height: 62px;
+            font-size: 24px;
         }
 
         @include resolution(small-desktop) {
@@ -119,5 +150,11 @@
         border: none;
         color: $color-white;
         @include font(roboto-bold-18-oblate);
+
+        @include resolution(big-desktop) {
+            width: 240px;
+            height: 55px;
+            font-size: 24px;
+        }
     }
 }

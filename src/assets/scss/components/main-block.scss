@@ -6,6 +6,11 @@
     height: calc(100vh - 61px);
     margin-top: 61px;
 
+    @include resolution(big-desktop) {
+        height: calc(100vh - 150px);
+        margin-top: 150px;
+    }
+
     @include resolution(tablet) {
         display: flex;
         flex-direction: column;
@@ -19,6 +24,10 @@
         color: $color-midnight;
         width: 500px;
 
+        @include resolution(big-desktop) {
+            width: 1000px;
+        }
+
         @include resolution(small-desktop) {
             margin-left: 60px;
         }
@@ -29,16 +38,28 @@
             align-items: center;
             margin-top: 100px;
             margin-left: 30px;
+            width: 300px;
         }
 
         @include resolution(big-mobile) {
             margin-top: 200px;
+            margin-left: 0;
+        }
+
+        @include resolution(mobile) {
+            width: 200px;
         }
     }
 
     &__title {
         @include font(roboto-48);
         margin-bottom: 33px;
+
+        @include resolution(big-desktop) {
+            font-size: 100px;
+            line-height: 140px;
+            margin-bottom: 100px;
+        }
 
         @include resolution(small-desktop) {
             font-size: 40px;
@@ -61,6 +82,13 @@
         @include font(roboto-15);
         width: 277px;
         margin-bottom: 14px;
+
+        @include resolution(big-desktop) {
+            font-size: 30px;
+            line-height: 50px;
+            width: 600px;
+            margin-bottom: 100px;
+        }
 
         @include resolution(small-desktop) {
             margin-bottom: 40px;
@@ -85,6 +113,12 @@
         color: $color-white;
         @include font(roboto-bold-14);
         text-transform: uppercase;
+
+        @include resolution(big-desktop) {
+            width: 350px;
+            height: 70px;
+            font-size: 22px;
+        }
 
         @include resolution(big-mobile) {
             font-size: 12px;

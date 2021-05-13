@@ -8,6 +8,11 @@
         margin-top: 88px;
         @include font(roboto-bold-32-oblate);
         color: $color-midnight;
+
+        @include resolution(big-desktop) {
+            font-size: 70px;
+            margin-top: 150px;
+        }
     }
 
     &__content {
@@ -17,6 +22,11 @@
         background: $color-white;
         box-shadow: 0px 14px 44px $color-gray;
         width: 1200px;
+
+        @include resolution(big-desktop) {
+            margin: 100px 0;
+            width: 90%;
+        }
 
         @include resolution(desktop) {
             width: 900px;
@@ -54,6 +64,15 @@
                 margin-right: 106px;
             }
 
+            @include resolution(big-desktop) {
+                margin-bottom: 100px;
+                margin-top: 100px;
+
+                &:nth-child(4) {
+                    margin-bottom: 0;
+                }
+            }
+
             @include resolution(desktop) {
 
                 &:not(:first-child) {
@@ -85,6 +104,10 @@
             height: 70px;
             background: $color-gallery-dark;
 
+            @include resolution(big-desktop) {
+                height: 250px;
+            }
+
             @include resolution(tablet) {
                 display: none;
             }
@@ -96,28 +119,14 @@
             align-items: center;
             margin: 100px 0 100px 100px;
 
+            @include resolution(big-desktop) {
+                img {
+                    width: 500px;
+                }
+            }
+
             @include resolution(tablet) {
                 margin: 100px 0 50px;
-            }
-        }
-
-        &__score {
-            display: flex;
-            align-items: center;
-            color: $color-midnight;
-            @include font(roboto-18-oblate);
-            margin-top: 20.23px;
-        }
-
-        &__stars {
-            margin-right: 4px;
-        }
-
-        &__star {
-            margin-right: -2.83px;
-
-            &:last-child {
-                margin-right: 0;
             }
         }
 
@@ -127,13 +136,57 @@
             align-items: center;
             margin: 100px 100px 100px 0;
 
+            @include resolution(big-desktop) {
+                img {
+                    width: 500px;
+                }
+            }
+
             @include resolution(tablet) {
                 margin: 50px 0 100px;
             }
         }
 
+        &__score {
+            display: flex;
+            align-items: center;
+            color: $color-midnight;
+            @include font(roboto-18-oblate);
+            margin-top: 20.23px;
+
+            @include resolution(big-desktop) {
+                img {
+                    width: 60px;
+                }
+
+                font-size: 34px;
+            }
+        }
+
+        &__stars {
+            margin-right: 4px;
+
+            @include resolution(big-desktop) {
+                margin-right: 40px;
+            }
+        }
+
+        &__star {
+            margin-right: -2.83px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            
+        }
+
         &__info {
             width: 400px;
+
+            @include resolution(big-desktop) {
+                width: 40%;
+            }
 
             @include resolution(desktop) {
                 margin: 70px 0;
@@ -149,6 +202,11 @@
         &__title {
             color: $color-midnight;
             @include font(lato-24);
+
+            @include resolution(big-desktop) {
+                font-size: 50px;
+                line-height: 60px;
+            }
 
             @include resolution(big-mobile) {
                 font-size: 18px;
@@ -169,6 +227,11 @@
             &__text {
                 color: $color-silver-chalice;
                 @include font(lato-15);
+
+                @include resolution(big-desktop) {
+                    font-size: 30px;
+                    margin-top: 30px;
+                }
             }
 
             &__leslie {
@@ -177,6 +240,14 @@
 
             &__anthony {
                 margin-right:  45px;
+            }
+
+            @include resolution(big-desktop) {
+                margin-top: 50px;
+
+                img {
+                    width: 150px;
+                }
             }
 
             @include resolution(big-mobile) {
@@ -198,6 +269,10 @@
             color: $color-midnight;
             @include font(lato-18);
 
+            @include resolution(big-desktop) {
+                font-size: 36px;
+            }
+
             @include resolution(big-mobile) {
                 margin-top: 20px;
             }
@@ -213,12 +288,22 @@
             border: none;
             text-transform: uppercase;
 
+            @include resolution(big-desktop) {
+                font-size: 24px;
+                width: 300px;
+                height: 80px;
+            }
+
             @include resolution(big-mobile) {
                 margin-top: 20px;
             }
         }
 
         &__image {
+
+            @include resolution(big-desktop) {
+                width: 50%;
+            }
             
             @include resolution(tablet) {
                 width: 100%;

@@ -5,6 +5,10 @@
     width: 100%;
     height: 120px;
 
+    @include resolution(big-desktop) {
+        height: 250px;
+    }
+
     @include resolution(tablet) {
         flex-direction: column;
         height: 400px;
@@ -14,6 +18,12 @@
         display: flex;
         align-items: center;
         margin-left: 120px;
+
+        @include resolution(big-desktop) {
+            img {
+                width: 300px;
+            }
+        }
 
         @include resolution(small-desktop) {
             margin-left: 60px;
@@ -38,6 +48,11 @@
                 margin-left: 20px;
             }
         }
+
+        @include resolution(big-desktop) {
+            font-size: 28px;
+            line-height: 38px;
+        }
     }
 
 
@@ -45,12 +60,24 @@
     &__amazon {
         display: flex;
         align-items: center;
+
+        @include resolution(big-desktop) {
+            img {
+                width: 200px;
+            }
+        }
     }
 
     &__eco {
         display: flex;
         align-items: center;
         margin-right: 127px;
+
+        @include resolution(big-desktop) {
+            img {
+                width: 300px;
+            }
+        }
 
         @include resolution(small-desktop) {
             margin-right: 60px;

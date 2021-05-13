@@ -8,6 +8,10 @@
         margin-top: 120px;
         color: $color-midnight;
         @include font(roboto-bold-31);
+
+        @include resolution(big-desktop) {
+            font-size: 70px;
+        }
     }
 
     &__buttons {
@@ -15,6 +19,11 @@
         justify-content: space-between;
         margin-top: 55.31px;
         width: 487.58px;
+
+        @include resolution(big-desktop) {
+            margin-top: 100px;
+            width: 920px;
+        }
 
         @include resolution(tablet) {
             flex-direction: column;
@@ -31,12 +40,21 @@
         text-transform: uppercase;
         @include font(roboto-bold-14);
         margin-bottom: 137px;
+
+        @include resolution(big-desktop) {
+            height: 75px;
+            font-size: 24px;
+        }
     }
 
     &__design {
         width: 220px;
         background: $color-east-bay;
         color: $color-white;
+
+        @include resolution(big-desktop) {
+            width: 400px;
+        }
 
         @include resolution(tablet) {
             margin-bottom: 50px;
@@ -48,6 +66,10 @@
         background: $color-white;
         color: $color-east-bay;
         margin-right: 9.78px;
+
+        @include resolution(big-desktop) {
+            width: 400px;
+        }
 
         @include resolution(tablet) {
             margin-bottom: 100px;

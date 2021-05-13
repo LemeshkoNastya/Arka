@@ -12,12 +12,26 @@
     position: absolute;
     top: 0;
 
+    @include resolution(big-desktop) {
+        height: 150px;
+        font-size: 22px;
+    }
+
     &__logo {
         margin-left: 24px;
+
+        @include resolution(big-desktop) {
+            margin-left: 120px;
+            width: 150px;
+        }
     }
 
     &__menu {
         width: 700px;
+
+        @include resolution(big-desktop) {
+            width: 1200px;
+        }
 
         @include resolution(desktop) {
             width: 600px;
@@ -64,6 +78,15 @@
             &__arrow {
                 width: 16px;
                 height: 16px;
+
+                @include resolution(big-desktop) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            @include resolution(big-desktop) {
+                width: 130px;
             }
         }
 
@@ -73,6 +96,15 @@
             .star {
                 width: 16px;
                 height: 16px;
+
+                @include resolution(big-desktop) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            @include resolution(big-desktop) {
+                width: 300px;
             }
         }
     }
@@ -87,6 +119,11 @@
         &-cart {
             width: 24px;
             height: 24px;
+        }
+
+        @include resolution(big-desktop) {
+            margin-right: 120px;
+            width: 180px;
         }
     }
 }
