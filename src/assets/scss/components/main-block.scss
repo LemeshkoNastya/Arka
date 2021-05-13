@@ -4,7 +4,6 @@
     background: $color-casablanca;
     width: 100%;
     height: calc(100vh - 61px);
-    // margin-top: 61px;
 
     @include resolution(big-desktop) {
         height: calc(100vh - 150px);
@@ -113,6 +112,12 @@
         color: $color-white;
         @include font(roboto-bold-14);
         text-transform: uppercase;
+        transition: 1s;
+
+        &:hover {
+            background: $color-white;
+            color: $color-east-bay;
+        }
 
         @include resolution(big-desktop) {
             width: 350px;
@@ -126,6 +131,7 @@
             height: 50px;
         }
     }
+
     &__image {
         margin-top: 87px;
 

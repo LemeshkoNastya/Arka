@@ -86,6 +86,7 @@
     
         .about {
             width: 81px;
+            cursor: pointer;
         
             &__arrow {
                 width: 16px;
@@ -127,6 +128,7 @@
         justify-content: space-between;
         width: 132px;
         margin-right: 24px;
+        cursor: pointer;
     
         &-cart {
             width: 24px;

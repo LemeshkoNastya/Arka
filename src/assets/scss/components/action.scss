@@ -40,6 +40,11 @@
         text-transform: uppercase;
         @include font(roboto-bold-14);
         margin-bottom: 137px;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
 
         @include resolution(big-desktop) {
             height: 75px;

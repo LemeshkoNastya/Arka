@@ -135,6 +135,12 @@
         @include font(roboto-bold-14);
         text-transform: uppercase;
         color: $color-white;
+        transition: 1s;
+
+        &:hover {
+            background: $color-white;
+            color: $color-east-bay;
+        }
 
         @include resolution(big-desktop) {
             width: 442px;

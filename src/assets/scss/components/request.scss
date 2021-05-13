@@ -120,6 +120,12 @@
         @include font(roboto-bold-14);
         color: $color-east-bay;
         text-transform: uppercase;
+        transition: 1s;
+
+        &:hover {
+            background: $color-east-bay;
+            color: $color-white;
+        }
 
         @include resolution(big-desktop) {
             width: 345px;

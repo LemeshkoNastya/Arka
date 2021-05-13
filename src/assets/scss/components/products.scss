@@ -48,6 +48,12 @@
             text-transform: uppercase;
             animation: fadeInRight;
             animation-duration: 2s;
+            transition: 1s;
+
+            &:hover {
+                background: $color-white;
+                color: $color-east-bay;
+            }
 
             @include resolution(big-desktop) {
                 width: 400px;
@@ -68,6 +74,11 @@
             height: 432px;
             background: $color-white;
             border: 1px solid $color-gallery;
+            transition: 1.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             @include resolution(big-desktop) {
                 width: 733px;
@@ -189,6 +200,11 @@
             text-transform: uppercase;
             animation: fadeInUp;
             animation-duration: 2s;
+
+            &:hover {
+                background: $color-east-bay;
+                color: $color-white;
+            }
 
             @include resolution(big-desktop) {
                 width: 289px;
