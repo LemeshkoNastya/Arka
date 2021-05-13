@@ -109,8 +109,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -399,10 +398,8 @@ button {
   box-shadow: 0px 14px 44px rgba(84, 84, 84, 0.25);
   position: absolute;
   top: 0;
-  -webkit-animation: slideInDown;
-          animation: slideInDown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: slideInDown;
+  animation-duration: 2s;
 }
 @media only screen and (min-width: 1800px) {
   .header__content {
@@ -459,6 +456,7 @@ button {
 }
 .header .list__link {
   text-decoration: none;
+  color: #011F3A;
 }
 .header .list__link:hover {
   border-bottom: 1px solid #011F3A;
@@ -823,10 +821,8 @@ button {
   }
 }
 .products__title__text {
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: fadeInLeft;
+  animation-duration: 2s;
   font-family: "Roboto";
   font-size: 32px;
   font-style: normal;
@@ -863,10 +859,8 @@ button {
   letter-spacing: 1.96px;
   color: #FFFFFF;
   text-transform: uppercase;
-  -webkit-animation: fadeInRight;
-          animation: fadeInRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: fadeInRight;
+  animation-duration: 2s;
   transition: 1s;
 }
 .products__title__button:hover {
@@ -1008,10 +1002,8 @@ button {
   line-height: 24px;
   color: #A1A1A1;
   margin-right: 16px;
-  -webkit-animation: fadeInUp;
-          animation: fadeInUp;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 @media only screen and (min-width: 1800px) {
   .products__info__text {
@@ -1038,10 +1030,8 @@ button {
   letter-spacing: 1.96px;
   color: #3D5675;
   text-transform: uppercase;
-  -webkit-animation: fadeInUp;
-          animation: fadeInUp;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 .products__info__button:hover {
   background: #3D5675;
@@ -1399,24 +1389,18 @@ button {
 }
 
 .card-eco {
-  -webkit-animation: fadeInBottomLeft;
-          animation: fadeInBottomLeft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: fadeInBottomLeft;
+  animation-duration: 2s;
 }
 
 .card-print {
-  -webkit-animation: fadeInUp;
-          animation: fadeInUp;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 
 .card-proofing {
-  -webkit-animation: fadeInBottomRight;
-          animation: fadeInBottomRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: fadeInBottomRight;
+  animation-duration: 2s;
 }
 
 .request {
@@ -1580,10 +1564,8 @@ button {
   width: 2px;
   height: 410px;
   background: rgba(161, 161, 161, 0.4);
-  -webkit-animation: headShake;
-          animation: headShake;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: headShake;
+  animation-duration: 2s;
 }
 @media only screen and (min-width: 1800px) {
   .request__line {
@@ -1754,10 +1736,8 @@ button {
   line-height: 21.09px;
   letter-spacing: 0.36px;
   margin-top: 20.23px;
-  -webkit-animation: zoomIn;
-          animation: zoomIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: zoomIn;
+  animation-duration: 2s;
 }
 @media only screen and (min-width: 1800px) {
   .merchants__content__score {
@@ -1785,16 +1765,12 @@ button {
   width: 400px;
 }
 .merchants__content__info:nth-child(1) {
-  -webkit-animation: slideInLeft;
-          animation: slideInLeft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 .merchants__content__info:nth-child(2) {
-  -webkit-animation: slideInRight;
-          animation: slideInRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: slideInRight;
+  animation-duration: 2s;
 }
 @media only screen and (min-width: 1800px) {
   .merchants__content__info {
@@ -2169,22 +2145,6 @@ button {
   padding: 9px 23px;
   outline: none;
 }
-.footer__input::-moz-placeholder {
-  font-family: "Roboto";
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 17.58px;
-  color: rgba(61, 86, 117, 0.4);
-}
-.footer__input:-ms-input-placeholder {
-  font-family: "Roboto";
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 17.58px;
-  color: rgba(61, 86, 117, 0.4);
-}
 .footer__input::placeholder {
   font-family: "Roboto";
   font-size: 15px;
@@ -2194,12 +2154,6 @@ button {
   color: rgba(61, 86, 117, 0.4);
 }
 @media only screen and (min-width: 1800px) {
-  .footer__input::-moz-placeholder {
-    font-size: 24px;
-  }
-  .footer__input:-ms-input-placeholder {
-    font-size: 24px;
-  }
   .footer__input::placeholder {
     font-size: 24px;
   }
@@ -2334,14 +2288,7 @@ button {
   border: 10px solid #FFCA3A;
   border-radius: 50%;
   border-left-color: #F2AE4D;
-  -webkit-animation: loader 1.3s linear infinite;
-          animation: loader 1.3s linear infinite;
-}
-
-@-webkit-keyframes loader {
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: loader 1.3s linear infinite;
 }
 
 @keyframes loader {
