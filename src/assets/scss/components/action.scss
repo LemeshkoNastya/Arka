@@ -15,6 +15,13 @@
         justify-content: space-between;
         margin-top: 55.31px;
         width: 487.58px;
+
+        @include resolution(tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+        }
     }
 
     &__design, &__product {
@@ -30,6 +37,10 @@
         width: 220px;
         background: $color-east-bay;
         color: $color-white;
+
+        @include resolution(tablet) {
+            margin-bottom: 50px;
+        }
     }
 
     &__product {
@@ -37,5 +48,9 @@
         background: $color-white;
         color: $color-east-bay;
         margin-right: 9.78px;
+
+        @include resolution(tablet) {
+            margin-bottom: 100px;
+        }
     }
 }

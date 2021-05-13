@@ -5,30 +5,89 @@
     padding: 57.31px 120px 59.69px;
     background: $color-porcelain;
 
+    @include resolution(desktop) {
+        padding: 57.31px 30px 59.69px;
+    }
+
+    @include resolution(small-desktop) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__logo {
+        @include resolution(small-desktop) {
+            margin-bottom: 70px;
+        }
     }
 
     &__column {
         display: flex;
         flex-direction: column;
 
+        @include resolution(tablet) {
+            margin-bottom: 50px;
+        }
+
         span {
             margin-bottom: 18px;
             color: $color-east-bay;
             @include font(roboto-15-oblate);
+
+            @include resolution(tablet) {
+                text-align: center;
+            }
         }
 
-        &__5 {
+        &__action {
             span {
                 margin-bottom: 14px;
             }
+
+            @include resolution(small-desktop) {
+                display: flex;
+                align-items: center;
+            }
+
+            
+        }
+
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            width: 54%;
+
+            @include resolution(small-desktop) {
+                width: 600px;
+                margin-bottom: 70px;
+            }
+
+            @include resolution(tablet) {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+                width: 400px;
+            }
+
+            @include resolution(big-mobile) {
+                width: 300px;
+            }
+
+            @include resolution(mobile) {
+                width: 200px;
+            }
         }
     }
+
+    
 
     &__icons {
         display: flex;
         justify-content: space-between;
         width: 94px;
+
+        @include resolution(tablet) {
+            margin-left: 36px;
+        }
     }
 
     &__input {
@@ -45,6 +104,10 @@
 
         &::placeholder {
             color: $color-east-bay-opacity;
+        }
+
+        @include resolution(small-desktop) {
+            margin: 20px 0;
         }
     }
 
