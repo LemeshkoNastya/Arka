@@ -72,6 +72,7 @@
     
         &__link {
             text-decoration: none;
+            color: $color-midnight;
 
             &:hover {
                 border-bottom: 1px solid $color-midnight;
