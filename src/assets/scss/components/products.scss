@@ -18,6 +18,9 @@
         }
 
         &__text {
+            animation: fadeInLeft;
+            animation-duration: 2s;
+
             @include font(roboto-32-oblate);
 
             @include resolution(big-desktop) {
@@ -43,6 +46,8 @@
             @include font(roboto-bold-14);
             color: $color-white;
             text-transform: uppercase;
+            animation: fadeInRight;
+            animation-duration: 2s;
 
             @include resolution(big-desktop) {
                 width: 400px;
@@ -160,6 +165,8 @@
             @include font(roboto-bold-15);
             color: $color-silver-chalice;
             margin-right: 16px;
+            animation: fadeInUp;
+            animation-duration: 2s;
 
             @include resolution(big-desktop) {
                 font-size: 40px;
@@ -180,6 +187,8 @@
             @include font(roboto-bold-14);
             color: $color-east-bay;
             text-transform: uppercase;
+            animation: fadeInUp;
+            animation-duration: 2s;
 
             @include resolution(big-desktop) {
                 width: 289px;

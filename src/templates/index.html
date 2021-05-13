@@ -8,36 +8,38 @@
 </head>
 <body>
   <header class="header">
-    <a href="#">
-      <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
-    </a>
-    <div class="header__menu__dropdown">Menu</div>
-    <nav class="header__menu">
-      <ul class="list">
-        <li class="list__item start">
-          <svg class="icon star">
-            <use href="./assets/icons/icons.svg#star"></use>
-          </svg>
-          <a href="#" class="list__link">Start your design</a>
-        </li>
-        <li class="list__item">
-          <a href="#" class="list__link">All products</a>
-        </li>
-        <li class="list__item">
-          <a href="#" class="list__link">Inspiration</a>
-        </li>
-        <li class="list__item about">
-          <a href="#" class="list__link">About</a>
-          <svg class="icon about__arrow">
-            <use href="./assets/icons/icons.svg#arrow"></use>
-          </svg>
-        </li>
-      </ul>
-    </nav>
-    <section class="account">
-      <span>Account</span>
-      <img src="./assets/icons/cart.svg" alt="logo" class="account__cart">
-    </section>
+    <div class="header__content wow">
+      <a href="#">
+        <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
+      </a>
+      <div class="header__menu__dropdown">Menu</div>
+      <nav class="header__menu">
+        <ul class="list">
+          <li class="list__item start">
+            <svg class="icon star">
+              <use href="./assets/icons/icons.svg#star"></use>
+            </svg>
+            <a href="#" class="list__link">Start your design</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">All products</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">Inspiration</a>
+          </li>
+          <li class="list__item about">
+            <a href="#" class="list__link">About</a>
+            <svg class="icon about__arrow">
+              <use href="./assets/icons/icons.svg#arrow"></use>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+      <section class="account">
+        <span>Account</span>
+        <img src="./assets/icons/cart.svg" alt="logo" class="account__cart">
+      </section>
+    </div>
   </header>
   <main>
     <section class="main">
@@ -68,8 +70,8 @@
     </section>
     <section class="products">
       <div class="products__title">
-        <span class="products__title__text">Products you can customize</span>
-        <button class="products__title__button">Browse all products</button>
+        <span class="products__title__text wow">Products you can customize</span>
+        <button class="products__title__button wow">Browse all products</button>
       </div>
       <div class="products__cards">
         <div class="card">
@@ -132,8 +134,8 @@
         </div>
       </div>
       <div class="products__info">
-        <span class="products__info__text">Need unbranded stock items?</span>
-        <button class="products__info__button">Shop stock</button>
+        <span class="products__info__text wow">Need unbranded stock items?</span>
+        <button class="products__info__button wow">Shop stock</button>
       </div>
     </section>
     <section class="customers">
@@ -168,21 +170,21 @@
     <section class="advantage">
       <span class="advantage__text">The Arka advantage</span>
       <div class="advantage__cards">
-        <div class="advantage__card">
+        <div class="advantage__card card-eco wow">
           <img src="./assets/img/material.png" alt="material" class="advantage__card__image">
           <div class="advantage__card__text">
             <span class="advantage__card__title">Eco-Friendly Material</span>
             <span class="advantage__card__subtitle">Order as little as 10, giving you the lowest minimums in the industry at the best prices.</span>
           </div>
         </div>
-        <div class="advantage__card">
+        <div class="advantage__card card-print wow">
           <img src="./assets/img/print.png" alt="print" class="advantage__card__image">
           <div class="advantage__card__text">
             <span class="advantage__card__title">Full Outside Print</span>
             <span class="advantage__card__subtitle">Design what you want - no extra cost! Prices include 100% exterior print, change design whenever!</span>
           </div>
         </div>
-        <div class="advantage__card">
+        <div class="advantage__card card-proofing wow">
           <img src="./assets/img/proofing.png" alt="proofing" class="advantage__card__image">
           <div class="advantage__card__text">
             <span class="advantage__card__title">Proofing</span>
@@ -199,7 +201,7 @@
           <span class="request__text request__text__column1">We’ll work directly with you to create a fully branded packaging system.</span>
           <button class="request__button">Request a quote</button>
         </div>
-        <div class="request__line"></div>
+        <div class="request__line wow"></div>
         <div class="request__card">
           <img src="./assets/img/dieline.png" alt="dieline" class="request__image">
           <span class="request__title">Need a free dieline template?</span>
@@ -214,7 +216,7 @@
         <div class="merchants__content__item">
           <div class="merchants__content__google">
             <img src="./assets/icons/logo-google.svg" alt="google"">
-            <div class="merchants__content__score">
+            <div class="merchants__content__score wow">
               <div class="merchants__content__stars">
                 <img src="./assets/icons/score-google-full.svg" alt="score google" class="merchants__content__star">
                 <img src="./assets/icons/score-google-full.svg" alt="score google" class="merchants__content__star">
@@ -228,7 +230,7 @@
           <div class="merchants__content__line"></div>
           <div class="merchants__content__shopify">
             <img src="./assets/icons/logo-shopify.svg" alt="shopify"">
-            <div class="merchants__content__score">
+            <div class="merchants__content__score wow">
               <div class="merchants__content__stars">
                 <img src="./assets/icons/score-shopify-full.svg" alt="score shopify" class="merchants__content__star">
                 <img src="./assets/icons/score-shopify-full.svg" alt="score shopify" class="merchants__content__star">
@@ -242,7 +244,7 @@
         </div>
         <div class="merchants__content__item">
           <img src="./assets/img/image1.png" alt="image boxes" class="merchants__content__image">
-          <div class="merchants__content__info">
+          <div class="merchants__content__info wow">
             <span class="merchants__content__title">“Arka’s team is super fast, knowledgeable, and easy to work with - highly recommended!”</span>
             <div class="merchants__content__user">
               <img src="./assets/img/jesse.png" alt="image jesse">
@@ -255,7 +257,7 @@
           </div>
         </div>
         <div class="merchants__content__item">
-          <div class="merchants__content__info">
+          <div class="merchants__content__info wow">
             <span class="merchants__content__title">“I really like Arka because it’s a really nice box, I’ve gotten a lot of compliments on&nbsp;it.”</span>
             <div class="merchants__content__user">
               <img src="./assets/img/leslie.png" alt="image leslie">
@@ -270,7 +272,7 @@
         </div>
         <div class="merchants__content__item">
           <img src="./assets/img/image3.png" alt="image boxes" class="merchants__content__image">
-          <div class="merchants__content__info">
+          <div class="merchants__content__info wow">
             <span class="merchants__content__title">“I love how easily it was to customize the box, and you guys were more affordable.”</span>
             <div class="merchants__content__user">
               <img src="./assets/img/anthony.png" alt="image anthony">

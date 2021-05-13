@@ -4,11 +4,11 @@
     background: $color-casablanca;
     width: 100%;
     height: calc(100vh - 61px);
-    margin-top: 61px;
+    // margin-top: 61px;
 
     @include resolution(big-desktop) {
         height: calc(100vh - 150px);
-        margin-top: 150px;
+        margin-top: 89px;
     }
 
     @include resolution(tablet) {

@@ -138,3 +138,18 @@
         }
     }
 }
+
+.card-eco {
+    animation: fadeInBottomLeft;
+    animation-duration: 2s;
+}
+
+.card-print {
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+.card-proofing {
+    animation: fadeInBottomRight;
+    animation-duration: 2s;
+}

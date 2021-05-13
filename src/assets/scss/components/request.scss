@@ -132,6 +132,8 @@
         width: 2px;
         height: 410px;
         background: $color-silver-chalice-opacity;
+        animation: headShake;
+        animation-duration: 2s;
 
         @include resolution(big-desktop) {
             height: 836px;

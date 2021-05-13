@@ -1,3 +1,7 @@
+.dropdown__content {
+    display: none;
+}
+
 @include resolution(small-desktop) {
     
     .dropdown__content {

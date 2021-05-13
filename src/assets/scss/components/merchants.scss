@@ -153,6 +153,8 @@
             color: $color-midnight;
             @include font(roboto-18-oblate);
             margin-top: 20.23px;
+            animation: zoomIn;
+            animation-duration: 2s;
 
             @include resolution(big-desktop) {
                 img {
@@ -183,6 +185,16 @@
 
         &__info {
             width: 400px;
+
+            &:nth-child(1) {
+                animation: slideInLeft;
+                animation-duration: 2s;
+            }
+
+            &:nth-child(2) {
+                animation: slideInRight;
+                animation-duration: 2s;
+            }
 
             @include resolution(big-desktop) {
                 width: 40%;
