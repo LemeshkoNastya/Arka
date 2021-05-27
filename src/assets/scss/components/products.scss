@@ -75,6 +75,7 @@
             background: $color-white;
             border: 1px solid $color-gallery;
             transition: 1.5s;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.1);

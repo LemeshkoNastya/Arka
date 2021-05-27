@@ -38,6 +38,10 @@
             font-size: 24px;
             width: 350px;
         }
+
+        @include resolution(big-mobile) {
+            width: 205px;
+        }
     }
 
     &__cards {

@@ -7,7 +7,6 @@
 
     @include resolution(big-desktop) {
         height: calc(100vh - 150px);
-        margin-top: 89px;
     }
 
     @include resolution(tablet) {
