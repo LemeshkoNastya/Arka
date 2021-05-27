@@ -532,7 +532,6 @@ button {
 @media only screen and (min-width: 1800px) {
   .main {
     height: calc(100vh - 150px);
-    margin-top: 89px;
   }
 }
 @media (max-width: 768px) {
@@ -886,6 +885,7 @@ button {
   background: #FFFFFF;
   border: 1px solid #EDEDED;
   transition: 1.5s;
+  cursor: pointer;
 }
 .products__cards .card:hover {
   transform: scale(1.1);
@@ -1092,6 +1092,11 @@ button {
   .customers__text {
     font-size: 24px;
     width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .customers__text {
+    width: 205px;
   }
 }
 .customers__cards {
@@ -1958,6 +1963,7 @@ button {
     align-items: center;
     justify-content: center;
     margin-top: 70px;
+    width: 280px;
   }
 }
 .action__design, .action__product {
