@@ -3,11 +3,6 @@
     justify-content: space-between;
     background: $color-casablanca;
     width: 100%;
-    height: calc(100vh - 61px);
-
-    @include resolution(big-desktop) {
-        height: calc(100vh - 150px);
-    }
 
     @include resolution(tablet) {
         display: flex;
@@ -71,7 +66,11 @@
 
         @include resolution(big-mobile) {
             margin-bottom: 20px;
-            width: 350px;
+            width: 300px;
+        }
+
+        @include resolution(mobile) {
+            width: 100%;
             font-size: 26px;
         }
     }
@@ -133,6 +132,7 @@
 
     &__image {
         margin-top: 87px;
+        margin-bottom: 98px;
 
         @include resolution(small-desktop) {
             width: 400px;

@@ -140,5 +140,13 @@
             margin-right: 120px;
             width: 180px;
         }
+
+        @include resolution(mobile) {
+            width: 100px;
+            margin-right: 0;
+            img {
+                display: none;
+            }
+        }
     }
 }
