@@ -521,18 +521,21 @@ button {
     width: 180px;
   }
 }
+@media (max-width: 320px) {
+  .header .account {
+    width: 100px;
+    margin-right: 0;
+  }
+  .header .account img {
+    display: none;
+  }
+}
 
 .main {
   display: flex;
   justify-content: space-between;
   background: #F2AE4D;
   width: 100%;
-  height: calc(100vh - 61px);
-}
-@media only screen and (min-width: 1800px) {
-  .main {
-    height: calc(100vh - 150px);
-  }
 }
 @media (max-width: 768px) {
   .main {
@@ -609,7 +612,12 @@ button {
 @media (max-width: 480px) {
   .main__title {
     margin-bottom: 20px;
-    width: 350px;
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .main__title {
+    width: 100%;
     font-size: 26px;
   }
 }
@@ -682,6 +690,7 @@ button {
 }
 .main__image {
   margin-top: 87px;
+  margin-bottom: 98px;
 }
 @media (max-width: 992px) {
   .main__image {
@@ -807,6 +816,11 @@ button {
     padding: 57px 60px 49.69px;
   }
 }
+@media (max-width: 480px) {
+  .products {
+    padding: 57px 30px 49.69px;
+  }
+}
 .products__title {
   display: flex;
   justify-content: space-between;
@@ -879,6 +893,11 @@ button {
   flex-wrap: wrap;
   margin-bottom: 46px;
 }
+@media (max-width: 480px) {
+  .products__cards {
+    width: 100%;
+  }
+}
 .products__cards .card {
   width: 400px;
   height: 432px;
@@ -905,6 +924,11 @@ button {
   .products__cards .card {
     width: 329px;
     height: 375px;
+  }
+}
+@media (max-width: 480px) {
+  .products__cards .card {
+    width: 100%;
   }
 }
 .products__cards .card__image {
@@ -1054,6 +1078,11 @@ button {
     padding: 70px 60px;
   }
 }
+@media (max-width: 480px) {
+  .customers {
+    padding: 70px 30px;
+  }
+}
 .customers__content {
   display: flex;
   justify-content: center;
@@ -1136,6 +1165,7 @@ button {
   }
 }
 .customers__card__image {
+  width: 100%;
   margin-bottom: 12px;
 }
 @media (max-width: 768px) {
@@ -1417,6 +1447,11 @@ button {
     padding: 60px 60px;
   }
 }
+@media (max-width: 480px) {
+  .request {
+    padding: 60px 30px;
+  }
+}
 .request__content {
   display: flex;
   justify-content: space-between;
@@ -1536,6 +1571,11 @@ button {
 @media (max-width: 768px) {
   .request__text {
     width: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .request__text {
+    width: 100%;
   }
 }
 .request__button {
@@ -1789,9 +1829,14 @@ button {
 }
 @media (max-width: 480px) {
   .merchants__content__info {
-    width: 300px;
+    width: 280px;
     text-align: center;
     margin: 30px 0;
+  }
+}
+@media (max-width: 320px) {
+  .merchants__content__info {
+    width: 200px;
   }
 }
 .merchants__content__title {
